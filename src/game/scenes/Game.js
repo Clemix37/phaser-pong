@@ -53,7 +53,7 @@ export class Game extends Scene {
 
 		this.physics.world.on("worldbounds", (body, up, down, left, right) => {
 			// When left and right world bound touches, then game over
-			if ((left, right)) this.scene.start("GameOver");
+			if (left || right) this.scene.start("GameOver");
 		});
 	}
 
